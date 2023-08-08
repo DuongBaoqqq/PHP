@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<form action="../controllers/C_Login.php" method="post">
+    <table >
+        <caption>Login</caption>
+        <tr>
+            <td>UserName</td>
+            <td><input type="text" id="username" name="username"></td>
+
+        </tr>
+        <tr>
+            <td></td>
+            <td><div id="messageUN"></div></td>
+        </tr>
+        <tr>
+            <td>Password</td>
+            <td><input type="password" id="password" name="password"></td>
+        </tr> 
+        <tr>
+            <td></td>
+            <td><div id="messagePW"></div></td>
+        </tr>
+    </table>
+    <input type="submit" name="submit" value="Dang nhap">
+    <input type="reset" name="reset" value="reset">
+</form>
+</body>
+</html>

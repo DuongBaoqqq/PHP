@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>form 33</title>
+    <script>
+        function ChangUpLow(){
+            var txt=document.getElementById("input");
+            var chuoi='';
+            for(var i=0;i<txt.value.length;i++){
+                var text=txt.value[i];
+                
+                if(text>='A' && text <= 'Z'){
+                    chuoi+=text.toLowerCase();
+                }
+                else if(text >='a' && text <= 'z'){
+                    chuoi+=text.toUpperCase();
+                }
+            }
+            document.getElementById("input2").value=chuoi;
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="input" onblur="ChangUpLow()" autofocus>
+    <input type="text" id="input2">
+</body>
+</html>

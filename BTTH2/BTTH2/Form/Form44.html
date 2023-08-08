@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form44</title>
+    <script>
+        function clickMe(){
+            event.preventDefault();
+            let input=document.getElementById('inp');
+            let index=input.value;
+            let option = document.getElementById('list');
+            if(index < option.length){
+                option.selectedIndex = index-1;
+            }else{
+                option.value = "";
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="f1" action="" method="get">
+        <select name="list" id="list">
+            <option >Index 1</option>
+            <option >Index 2</option>
+            <option >Index 3</option>
+            <option >Index 4</option>
+        </select>
+        <input type="text" name="inp" id="inp">
+        <button onclick="clickMe()" >Click here</button>
+    </form>
+</body>
+</html>
